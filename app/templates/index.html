@@ -1,127 +1,160 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vitalii Kuznetcov</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  </head>
-  <body>
-    <header class="container text-center">
-      <div class="row">
-        <div class="col">
-          <h1>Vitalii Kuznetcov</h1>
-          <h2>Full Stack Developer</h2>
-        </div>
-        <div class="col">
-          <h5><a href="mailto:greedy.jabberwock@gmail.com">greedy.jabberwock@gmail.com</a></h5>
-          <h5>(972) 055-289-8102</h5>
-          <br>
-          <h5><a href="https://github.com/Greedy-Jabberwock/">Github</a></h5>
-          <h5><a href="https://www.linkedin.com/in/vitalii-kuznetcov-0bab4b20b/">LinkedIn</a></h5>
-        </div>
-      </div>
-    </header>
-      <main>
-        <section class="text-center">
-          <div id="skills" class="container text-center">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vitalii Kuznecov</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <main>
+        <div class="grid-container">
 
-            <div class="row">
-              <div class="col">
-                <h3>Skills</h3>
-              </div>
-
-              <div class="col d-flex justify-content-around">
-                <div class="d-flex flex-column justify-content-center">
-                  <h4>Backend</h4>
-                  <p>Some text</p>
+            <section class="header bb">
+                <div>
+                    <img id="photo" src="{{url_for('static', filename='img/me.jpg')}}" alt=""></div>
+                <div>
+                    <h1 class="italic">Vitalii Kuznecov</h1>
+                    <p class="italic">FullStack Developer</p>
+                    <p class="info"><span>Ashdod, Israel</span><span> | </span><span>055-289-8102</span></p>
                 </div>
-
-                <div class="d-flex flex-column justify-content-center">
-                  <h4>Frontend</h4>
-                  <p>Some text</p>
+                <div class="link">
+                  <ul>
+                      <li><a href="mailto:greedy.jabberwock@gmail.com"><img class="icons" src="{{url_for('static', filename='img/mail.png')}}" alt=""></a></li>
+                      <li><a href="https://github.com/Greedy-Jabberwock"><img class="icons" src="{{url_for('static', filename='img/git.png')}}" alt=""></a></li>
+                      <li><a href="https://www.linkedin.com/in/vitalii-kuznetcov-0bab4b20b/"><img class="icons" src="{{url_for('static', filename='img/linkedin.png')}}" alt=""></a></li>
+                  </ul>
                 </div>
-
-                <div class="d-flex flex-column justify-content-center">
-                  <h4>Databases</h4>
-                  <p>Some text</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div id="technical" class="container text-center">
-            <div class="row">
-              <div class="col">
-                <h3>Technical</h3>
-              </div>
-              <div class="col">
-                <table class="table">
-                  <tbody>
-                    <tr>
-                      <td>Python</td>
-                      <td>HTML5</td>
-                      <td>Bootstrap</td>
-                    </tr>
-                    <tr>
-                      <td>Flask</td>
-                      <td>CSS</td>
-                      <td>Jinja</td>
-                    </tr>
-                    <tr>
-                      <td>PostgreSQL</td>
-                      <td>JavaScript</td>
-                      <td>Heroku</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-          <div id="work" class="container text-center">
-            <div class="row">
-              <div class="col">
-                <h3>Work</h3>
-              </div>
-              <div class="col">
-                <p>Have no real working experience in high-tech yet.</p>
-              </div>
-            </div>
-          </div>
-          <div id="education" class="container text-center">
-            <div class="row">
-              <div class="col">
-                <h3>Education</h3>
-              </div>
-              <div class="col">
+            </section>
+            <section class="skill sec_title italic bold bb">Skills</section>
+            <section class="skills_content bb">
                 <table>
-                  <tr>
-                    <td>
-                      <p>Developers.Institute - Tel Aviv, Israel</p>
-                      <p>Full-Stack Python</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Developers.Institute - Tel Aviv, Israel</p>
-                      <p>Full-Stack Python</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Developers.Institute - Tel Aviv, Israel</p>
-                      <p>Full-Stack Python</p>
-                    </td>
-                  </tr>
+                    <tr>
+                        <td>
+                            <h4>Backend</h4>
+                            <p>Have experience with Python, Flask framework with extentions - Bcrypt, SQLAlchemy, Migrate, Login</p>
+                        </td>
+                        <td>
+                            <h4>Frontend</h4>
+                            <p>Know HTML5 tags and Bootstrap, CSS. Have experience in using JavaScript to interact with DOM.</p>
+                        </td>
+                        <td>
+                            <h4>Database</h4>
+                            <p>Have relevant knowledge about relative databases and DBMS, like PostgreSQL and MySQL.</p>
+                        </td>
+                    </tr>
                 </table>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-    <footer>
+            </section>
 
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  </body>
+            <section class="tech sec_title italic bold bb">Technical</section>
+            <section class="tech_content bb">
+                <table>
+                    <tr>
+                        <td>Python</td>
+                        <td>HTML5</td>
+                        <td>PostgreSQL</td>
+                    </tr>
+                    <tr>
+                        <td>Flask</td>
+                        <td>CSS</td>
+                        <td>MySQL</td>
+                    </tr>
+                    <tr>
+                        <td>Jinja</td>
+                        <td>JavaScript</td>
+                        <td>SQLAlchemy</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="education sec_title italic bold bb">Education</section>
+            <section class="educ_cont bb">
+                <ul class="align">
+                    <li>
+                        <p class="ed_title">Full Stack Web Development, Python and JavaScript program  </p>
+                        <p class="ed_inst italic">Developers Institute, TLV Coding Bootcamp</p>
+                    </li>
+                    <li>
+                        <p class="ed_title">Java and Android Development</p>
+                        <p class="ed_inst italic">MASA, Ayanot</p>
+                    </li>
+                    <li>
+                        <p class="ed_title">Information technology and information security (not completed)</p>
+                        <p class="ed_inst italic">“Synergy” University, Moscow, Russia</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="working sec_title italic bold bb">Work</section>
+            <section class="work_cont bb"><p class="align">Haven't the work experience yet.</p></section>
+
+            <section class="languages sec_title italic bold bb">Language</section>
+            <section class="lang_cont bb">
+                <div class="align"><span class="bold">English</span><span> – intermediate</span></div>
+                <div class="align"><span class="bold">Hebrew</span><span></span> – fluently</div>
+                <div class="align"><span class="bold">Russian</span><span> – native</span></div>
+            </section>
+
+            <section class="portfolio sec_title italic bold bb">Projects</section>
+            <section class="port_cont bb">
+                <div>
+
+                    <div>
+                        <p>Landing page</p>
+                        <img src="{{url_for('static', filename='img/landing.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        <p>Landing page</p>
+                        <img src="{{url_for('static', filename='img/land2.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        <p>To-Do list</p>
+                        <img src="{{url_for('static', filename='img/todo.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        <p>CryptOS</p>
+                        <img src="{{url_for('static', filename='img/cryptos.jpg')}}" alt="">
+                    </div>
+
+                    <div>
+                        <p>Login page</p>
+                        <img src="{{url_for('static', filename='img/login.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        <p>Marketplace</p>
+                        <img src="{{url_for('static', filename='img/market.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        <p>Painting page</p>
+                        <img src="{{url_for('static', filename='img/paint.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        <p>Conway's Game of Life</p>
+                        <img src="{{url_for('static', filename='img/conway.jpg')}}" alt="">
+                    </div>
+
+                    <div>
+                        <p>Guess Code Game</p>
+                        <img src="{{url_for('static', filename='img/codegame.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        <p>AudioBooks</p>
+                        <img src="{{url_for('static', filename='img/audiobooks.jpg')}}" alt="">
+                    </div>
+
+                </div>
+            </section>
+
+<!--            <section class="foot">-->
+<!--                <div>-->
+<!--                    <p>Made by Vitalii Kuznecov in 2022</p>-->
+<!--                    <p>-->
+<!--                        <a href="mailto:greedy.jabberwock@gmail.com"><img class="icons" src="{{url_for('static', filename='img/mail.png')}}" alt=""></a>-->
+<!--                        <a href="https://github.com/Greedy-Jabberwock"><img class="icons" src="{{url_for('static', filename='img/git.png')}}" alt=""></a>-->
+<!--                        <a href="https://www.linkedin.com/in/vitalii-kuznetcov-0bab4b20b/"><img class="icons" src="{{url_for('static', filename='img/linkedin.png')}}" alt=""></a>-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </section>-->
+
+        </div>
+    </main>
+</body>
 </html>
