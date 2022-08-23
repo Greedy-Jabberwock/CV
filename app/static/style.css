@@ -36,11 +36,6 @@ main {
 .educ_cont > ul > li > p:first-child { margin-bottom: 5px; }
 .educ_cont > ul > li > p:last-child { margin-top: 5px; }
 
-.working { grid-area: work; }
-
-.work_cont { grid-area: w_content; }
-.work_cont > p { font-size: 2.3vh; padding-left: 10vh; }
-
 .languages { grid-area: lang; }
 
 .lang_cont { grid-area: l_content; }
@@ -64,7 +59,6 @@ grid-template-areas:
 'skills s_content s_content s_content'
 'technical t_content t_content t_content'
 'education e_content e_content e_content'
-'work w_content w_content w_content'
 'lang l_content l_content l_content'
 'port port_cont port_cont port_cont';
 padding: 1px;
